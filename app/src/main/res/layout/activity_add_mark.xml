@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bg"
+    android:layout_height="match_parent"
+    tools:context=".AddMark">
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Добавление автомобиля"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="40dp"
+        android:text="Добавить"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="390dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/engine"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/engine"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint" />
+
+        <EditText
+            android:id="@+id/fuel"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Объем бака"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint" />
+
+        <EditText
+            android:id="@+id/mass"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/mass"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint" />
+
+        <EditText
+            android:id="@+id/taho"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Макс.знач.тахометра"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint" />
+
+        <EditText
+            android:id="@+id/per1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Передат. число (п. 1)"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="390dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/per2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Передат. число (п. 2)"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint" />
+
+        <EditText
+            android:id="@+id/per3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Передат. число (п. 3)"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint" />
+
+        <EditText
+            android:id="@+id/per4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Передат. число (п. 4)"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint" />
+
+        <EditText
+            android:id="@+id/per5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Передат. число (п. 5)"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint" />
+
+        <EditText
+            android:id="@+id/per6"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Передат. число (п. R)"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/mark"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="425dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/mark"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

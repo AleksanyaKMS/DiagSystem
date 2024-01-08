@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Система диагностики неисправностей</string>
+    <string name="show">Диагностика</string>
+    <string name="error">Ошибки</string>
+    <string name="accept">Подтвердить</string>
+    <string name="engine">Объем двигателя</string>
+    <string name="fuel">Объем топливного бака</string>
+    <string name="mass">Масса автомобиля</string>
+    <string name="taho">Макс. значение тахометра</string>
+    <string name="login">Имя пользователя</string>
+    <string name="profile">Профиль</string>
+    <string name="enterProfile">Ввод данных</string>
+    <string name="mark">Марка</string>
+    <string name="enter">Ввести</string>
+    <string name="per1">Передадочное число (пер. 1)</string>
+    <string name="per2">Передадочное число (пер. 2)</string>
+    <string name="per3">Передадочное число (пер. 3)</string>
+    <string name="per4">Передадочное число (пер. 4)</string>
+    <string name="per5">Передадочное число (пер. 5)</string>
+    <string name="per6">Передадочное число (пер. R)</string>
+    <string-array name="models">
+        <item>Lada</item>
+        <item>Kia</item>
+        <item>Hyundai</item>
+        <item>Haval</item>
+        <item>Renault</item>
+        <item>Volkswagen</item>
+        <item>Geely</item>
+        <item>УАЗ</item>
+    </string-array>
+    <string-array name="graph">
+        <item>Линейный</item>
+        <item>Диаграмма</item>
+    </string-array>
+    <string-array name="pokaz">
+        <item>Крат. коррекция</item>
+        <item>Долг. коррекция</item>
+        <item>Расход топлива</item>
+        <item>Расстояние</item>
+        <item>Скорость</item>
+    </string-array>
+</resources>

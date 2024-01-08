@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bg"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/enterProfile"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="240sp"
+        android:layout_height="60sp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/login"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint"
+        app:layout_constraintBottom_toTopOf="@+id/new_mark"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <EditText
+        android:id="@+id/engine"
+        android:layout_width="240sp"
+        android:layout_height="60sp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/engine"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint"
+        app:layout_constraintBottom_toTopOf="@+id/fuel"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/new_mark"
+        android:layout_width="240sp"
+        android:layout_height="60sp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/mark"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint"
+        app:layout_constraintBottom_toTopOf="@+id/engine"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/fuel"
+        android:layout_width="240sp"
+        android:layout_height="60sp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/fuel"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint"
+        app:layout_constraintBottom_toTopOf="@+id/mass"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/mass"
+        android:layout_width="240sp"
+        android:layout_height="60sp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/mass"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint"
+        app:layout_constraintBottom_toTopOf="@+id/taho"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/taho"
+        android:layout_width="240sp"
+        android:layout_height="60sp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="@string/taho"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/fuel"
+        app:layout_constraintEnd_toStartOf="@+id/engine"
+        app:srcCompat="@drawable/engine" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/mass"
+        app:layout_constraintEnd_toStartOf="@+id/fuel"
+        app:srcCompat="@drawable/fueltank" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/taho"
+        app:layout_constraintEnd_toStartOf="@+id/mass"
+        app:srcCompat="@drawable/mass" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/taho"
+        app:srcCompat="@drawable/taho" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="180sp"
+        android:layout_height="60sp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/accept"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/textInputLayout"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"-->
+<!--        android:layout_width="240dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginEnd="60dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:textColorHint="@color/hint"-->
+<!--        app:boxBackgroundColor="@color/bg"-->
+<!--        app:boxStrokeColor="@color/white"-->
+<!--        app:counterTextColor="@color/hint"-->
+<!--        app:hintTextColor="@color/hint"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/engine"-->
+<!--        app:layout_constraintEnd_toEndOf="parent">-->
+
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/auto_complete_text"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/mark"-->
+<!--            android:inputType="none"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textColorHighlight="@color/hint"-->
+<!--            android:textColorHint="@color/hint"-->
+<!--            android:textColorLink="@color/hint" />-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/engine"
+        app:layout_constraintEnd_toStartOf="@+id/new_mark"
+        app:srcCompat="@drawable/car" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/new_mark"
+        app:layout_constraintEnd_toStartOf="@+id/login"
+        app:srcCompat="@drawable/profile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
